@@ -1,0 +1,27 @@
+h1 {
+    background-color: darkgreen;
+}
+
+h2 {
+    background-color: darkgreen;
+}
+
+.box1 {
+    background-color: aqua;
+}
+
+.box2 {
+    background-color: brown;
+    /* 1; giá trị (xung quanh = giá trị đó)
+       2; giá trị :giá trị đầu ( trên, dưới)
+                   giá trị thứ 2( trái phải)*/
+    /* margin: 50px 100px 100px 30px; */
+    /* auto căn khối ra giữa  */
+    width: 50%;
+    margin: 50px auto;
+    padding: 100px;
+}
+
+.box3 {
+    background-color: blueviolet;
+}
