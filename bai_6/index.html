@@ -4,88 +4,125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>bai_6</title>
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
     <div class="container">
-        <!-- thanh ben trai(siderbar) -->
-        <div class="sidebar">
-            <h1>Your Library</h1>
-            <ul>
-                <li>Playlists</li>
-                <li>Podcasts</li>
+        <div class="thanhtrai">
+            <div class="Create">
+                <h1>Your Library</h1>
+                <button>+ Create</button>
+            </div>
+            <ul class="play">
+                <li>Playlist</li>
+                <li>Podcast</li>
                 <li>Albums</li>
                 <li>Artists</li>
             </ul>
+            <input type="text">
             <ul>
-                <li>Liked Songs . Playlist . 409 songs</li>
+                <li>Liked Songs</li>
                 <li>Your Episodes</li>
-                <li>Saved & downloaded</li>
-                <li>Phep Mau (Dan Ca Go) Original Soundtrack</li>
-                <li>Single . MAYDAYS</li>
-                <li>HipHop . Kel</li>
-                <li>Fresh Finds Vietnam</li>
-                <li>Wren Evans . Artist</li>
-                <li>Maroon 5 Hits</li>
-                <li>dongvui Harmony</li>
-                <li>Album . Den</li>
-                <li>Tinh Nhan Oi</li>
-                <li>Single . Orange</li>
-                <li>Tét</li>
-                <li>Playlist . Kel</li>
-                <li>Anne-Marie . Artist</li>
-                <li>Ngàn Năm Ân Sáng</li>
-                <li>Đặng Vinh Thinh, BMZ, PTbis</li>
+                <li>Hiphop</li>
+                <li>Tình Nhân Ơi</li>
+                <li>Wren Evans</li>
             </ul>
         </div>
-        <!-- thanh giua(main) -->
-        <div class="main">
-            <div class="Playlist-header">
-                <img src="../bai_6/pic/anh2.png" alt="">
-                <div>
+        <div class="thanhgiua">
+            <!-- Header playlist -->
+            <div class="playlist-header">
+                <img src="../bai_6/pic/anh2.png" alt="Liked Songs Cover">
+                <div class="playlist-info">
                     <p>Playlist</p>
-                    <h2>Liked Songs</h2>
-                    <p>Kel . 409 songs</p>
-                </div>
-                <div class="song-list">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>#</th>
-                                <th>Title</th>
-                                <th>Album</th>
-                                <th>Date added</th>
-                                <th>dong ho</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>1</td>
-                                <td>trung</td>
-                                <td>trung 2</td>
-                                <td>4 weeks ago</td>
-                                <td>3:40</td>
-                            </tr>
-                        </tbody>
-                        <tr>
-                            <td>2</td>
-                            <td>Ngàn Năm Ân Sáng · Đặng Vinh Thinh, BMZ, PTbis</td>
-                            <td>Ngàn Năm Ân Sáng</td>
-                            <td>4 weeks ago</td>
-                            <td>3:34</td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>Là Tự Lực (Since) · Nguyễn Minh Xuân Hải</td>
-                            <td>Là Tự Lực (Since)</td>
-                            <td>Jul 20, 2025</td>
-                            <td>4:27</td>
-                        </tr>
-                    </table>
+                    <h1>Liked Songs</h1>
+                    <p>Kel • 409 songs</p>
                 </div>
             </div>
+
+            <!-- Control buttons -->
+            <div>
+                <table border="0" width="100%">
+                    <div class="controls">
+                        <button class="play"><img src="../bai_6/pic/anh3.png" alt="" width="20px"></button>
+                        <button class="shuffle"><img src="../bai_6/pic/anh4.png" alt="" width="20px"></button>
+                        <button class="download"><img src="../bai_6/pic/anh5.png" alt="" width="20px"></button>
+                    </div>
+
+                    <div class="song-list">
+                        <div class="song-list-header">
+                            <span>#</span>
+                            <span>Title</span>
+                            <span>Album</span>
+                            <span>Date added</span>
+                            <span><i class="fa fa-clock-o" aria-hidden="true"></i></span>
+                        </div>
+                        <div class="song-item">
+                            <span>1</span>
+                            <span><img src="../bai_6/pic/anh2.png" width="15px">大山 . 千草音</span>
+                            <span>大山</span>
+                            <span>4 weeks ago</span>
+                            <span>3:40</span>
+                        </div>
+                        <div class="song-item">
+                            <span>2</span>
+                            <span><img src="../bai_6/pic/anh2.png" width="15px"> Ngày Nhìn Anh Sáng</span>
+                            <span>Ngắm Nhìn Anh Sáng</span>
+                            <span>4 weeks ago</span>
+                            <span>3:34</span>
+                        </div>
+                        <div class="song-item">
+                            <span>3</span>
+                            <span><img src="../bai_6/pic/anh2.png" width="15px"> I Was Made For Loving You</span>
+                            <span>Unbreakable Smile</span>
+                            <span>Aug 6, 2025</span>
+                            <span>3:09</span>
+                        </div>
+                        <div class="song-item">
+                            <span>4</span>
+                            <span><img src="../bai_6/pic/anh2.png" width="15px"> Nguyễn Minh Xuân Ai</span>
+                            <span>Lá Túc (Since)</span>
+                            <span>Jul 20, 2025</span>
+                            <span>4:27</span>
+                        </div>
+                        <div class="song-item">
+                            <span>5</span>
+                            <span><img src="../bai_6/pic/anh2.png" width="15px"> Stereo Hearts (feat. Adam
+                                Levine)</span>
+                            <span>The Papercut Chronicles II</span>
+                            <span>Jul 16, 2025</span>
+                            <span>3:31</span>
+                        </div>
+                    </div>
+                </table>
+            </div>
+        </div>
+        <div class="thanhcuoi">
+            <div>
+                <img src="..//bai_6/pic/anh6.png" width="100%" height="90%">
+                <h3>Ngắm Nhìn Anh Sáng</h3>
+                <p>Đăng Vinh Thinh, BMZ, PTbis</p>
+                <button>#</button>
+            </div>
+            <div>
+                <img src="..//bai_6/pic/anh6.png" width="100%" height="90%">
+                <h3>Ngắm Nhìn Anh Sáng</h3>
+                <p>Đăng Vinh Thinh, BMZ, PTbis</p>
+                <button>#</button>
+            </div>
+        </div>
+    </div>
+    <div class="player">
+        <span>0:09 / 3:34</span>
+        <div class="player-controls">
+            <button><i class="fa fa-step-backward" aria-hidden="true"></i></button>
+            <button><i class="fa fa-play" aria-hidden="true"></i></button>
+            <button><i class="fa fa-step-forward" aria-hidden="true"></i></button>
+        </div>
+        <div>
+            <button><i class="fa fa-volume-up" aria-hidden="true"></i></button>
         </div>
     </div>
 </body>
