@@ -1,0 +1,43 @@
+.thanhtren {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+}
+
+li {
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.thanhgiua {
+    background-color: rgb(220, 232, 220);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.noidung {
+
+    width: 80%;
+}
+
+.thanhduoi {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+}
+
+.noidung2 {
+    width: 80%;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script src="script.js"></script>
+    <script>
+        let maDonHang = "ALXYZ";
+        let thongTinKhachHang = {
+            hoTen: "Trương Công Minh",
+            soDienThoai: "0961011003",
+            trangThaiTVTT: "Tốt",
+            danhSachSanPham: {
+                sP1: {
+                    maSP: "H2O",
+                    tenSP: "nuoc",
+                    soLuong: 20,
+                    giaSP: 20000
+                },
+                sP2: {
+                    maSP: "H3O",
+                    tenSP: "nuoc1",
+                    soLuong: 20,
+                    giaSP: 20000
+                },
+                sP3: {
+                    maSP: "H4O",
+                    tenSP: "nuoc2",
+                    soLuong: 20,
+                    giaSP: 20000
+                },
+                sP4: {
+                    maSP: "H5O",
+                    tenSP: "nuoc3",
+                    soLuong: 20,
+                    giaSP: 20000
+                }
+            }
+        }
+        let danhSachSanPham = thongTinKhachHang.danhSachSanPham;
+        document.writeln("thongTinKhachHang" + "<br>" + thongTinKhachHang.hoTen + "<br>" + thongTinKhachHang.soDienThoai + "<br>" + thongTinKhachHang.trangThaiTVTT + "<br>"),
+            tongSP1 = danhSachSanPham.sP1.soLuong * danhSachSanPham.sP1.giaSP;
+        tongSP2 = danhSachSanPham.sP2.soLuong * danhSachSanPham.sP2.giaSP;
+        tongSP3 = danhSachSanPham.sP3.soLuong * danhSachSanPham.sP3.giaSP;
+        tongSP4 = danhSachSanPham.sP4.soLuong * danhSachSanPham.sP4.giaSP;
+        tongALLSP = tongSP1 + tongSP2 + tongSP3 + tongSP4;
+        document.writeln("Tổng cộng: " + tongALLSP);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script src="script.js"></script>
+    <script>
+        document.writeln("hello world" + "<br>");
+        // để viết chú thích js đúng kí tự
+        let hoTen = "Bui Duy Tien";
+        document.writeln(hoTen + "<br>");  //<br> để xuống dòng
+        //dấu + để nối chuỗi.d
+        //Hằng
+        const pi = 3.14;
+
+        // let soThuNhat=10;
+        // let soThuHai="10";
+        // let soThuBa=0;
+        // let ketQua;
+        // //phép +
+        // ketQua= soThuNhat+soThuHai;
+        // document.writeln(ketQua);
+        // //phép trừ
+        // ketQua=soThuNhat-soThuHai;
+        // document.writeln(ketQua);
+        // //phép nhân
+        // ketQua=soThuNhat*soThuHai;
+        // document.writeln(ketQua);
+        // //phép chia
+        // ketQua=soThuNhat/soThuHai;
+        // document.writeln(ketQua);
+        // // % chia lấy phần dư
+        // ketQua=soThuNhat % soThuHai;
+        // document.writeln(ketQua);
+
+        // document.writeln(ketQua++); //++ tăng thêm 1 đơn vị
+        // document.writeln(ketQua--);  //-- giảm đi 1 đơn vị
+
+        // soThuNhat += soThuHai;     //+= số thứ 1 = số thứ 1+ số thứ 2, tương tự -=, *=, /=
+        // document.writeln(soThuNhat);
+        // document.writeln(soThuNhat== soThuHai); //so sánh về giá trị
+        // document.writeln(soThuNhat=== soThuHai); // so sánh kiểu dữ liệu
+        // document.writeln(soThuNhat !== soThuHai);
+        // document.writeln(!(soThuNhat !== soThuHai));
+
+        // document.writeln(ketQua);
+
+        let thongTinSinhVien = {
+            hoTen: "Bui Duy Tien",
+            tuoi: 20,
+            gioitinh: true,
+            lop: "công nghệ thông tin địa học"
+        }
+
+        document.writeln("xin chào " + thongTinSinhVien.hoTen + " lớp " + thongTinSinhVien.lop + "<br>")
+        let diaChiTien = {
+            thanhpho: "Hà Nội",
+            huyen: "Thanh Oai",
+            so: 28
+        }
+        document.writeln("xin chào " + thongTinSinhVien.hoTen + " lớp " + thongTinSinhVien.lop + " số nhà: " + diaChiTien.so
+            + " huyện " + diaChiTien.huyen + " thành phố " + diaChiTien.thanhpho + "<br>"
+        )
+        let soThuHai = "10.5";
+        document.writeln(typeof (soThuHai));
+        soThuHai = parseFloat(soThuHai);
+        document.writeln(typeof (soThuHai));
+        document.writeln(soThuHai);
+
+    </script>
+
+</body>
+
+</html>
