@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    //Mảng
+    // let arr = [1, 2, 3, 4, 'a', 'b', 'c', 'd', 2, 3];
+    // document.writeln(Array.isArray(arr) + '<br>'); //Kiểm tra định dạng mảng 
+    // document.writeln(arr.length + '<br>'); // kiểm tra độ dài mảng 
+    // document.writeln(arr[3] + '<br>'); //Kiểm tra xem ở chỗ đó là kí tự nào 
+    // document.writeln(arr.indexOf(3) + '<br>'); //Kiểm tra xem có bảo nhiêu kí tự
+    // arr[3] = 6; //Thay kí tự 
+    // document.writeln(arr);
+
+
+    let a, b, c, d;
+    a = [1, 2, 3];
+    b = "JavaScript";
+    d = a.concat(b, c); //concat dùng để nối các mảng
+    document.writeln(d + '<br>');
+    c = [42, "JS"];
+    // document.writeln(d + '<br>');
+    // d = d.join("/"); //join dùng để thêm dấu hoặc chèn thêm các kí tự vào giữa các mảng 
+    // document.writeln(d + '<br>');
+    d.pop(); //pop dùng để xóa phần tử cuối cùng trong mảng 
+    document.writeln(d + '<br>');
+    d.push("Minh"); //push dùng để thêm phần tử vào cuối mảng 
+    document.writeln(d + '<br>');
+    d.reverse(); //reverse dùng để đảo mảng 
+    document.writeln(d + '<br>');
+    d.shift(); // shift dùng để xóa phần tử đầu của mảng 
+    document.writeln(d + '<br>');
+    d.unshift("minh"); //unshift dùng để thêm vào phần tử đầu tiên
+    document.writeln(d + '<br>');
+
+
+    // let so = "1000000000000000001";
+    // let soCuoi = parseInt(so[so.length - 1]);
+    // if (soCuoi % 2 == 0) {
+    //     document.writeln(so + "la so chan");
+    // } else {
+    //     document.writeln(so + "la so le");
+    // }
+
+    let now = new Date().getHours();
+    // 5->10h: Chào buổi sáng
+    // 10->13h: Chào buổi trưa
+    // 13->17h: Chào buổi chiều
+    // 17->22h: Chào buổi tối
+    //Còn lại: Chào buổi đêm
+    if (now > 5 && now <= 10) {
+        document.writeln("Chào buổi sáng");
+    } else if (now >= 10 && now < 13) {
+        document.writeln("Chào buổi trưa");
+    } else if (now >= 13 && now < 17) {
+        document.writeln("Chào buổi chiều");
+    } else if (now >= 17 && now < 22) {
+        document.writeln("Chào buổi tối");
+    } else {
+        document.writeln("Chào buổi đêm");
+    }
+
+    // a,b,c
+    // tổng = điểm a nhân 0,6 cộng điểm b nhân 0,3 công điểm c nhân 0,1 
+    // tổng nằm trong khoảng 8 đến 10: điểm AborController
+    // 7->8: B
+    // 5->7: C
+    // 4->5: D
+    // nhỏ hơn: F
+
+    let a, b, c, tong;
+
+</script>
+
+<body>
+
+</body>
+
+</html>

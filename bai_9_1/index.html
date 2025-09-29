@@ -11,10 +11,11 @@
     <script src="script.js"></script>
     <script>
         let maDonHang = "ALXYZ";
+        document.writeln(("Mã vận đơn") + "<br>" + maDonHang + "<br>");
         let thongTinKhachHang = {
             hoTen: "Trương Công Minh",
             soDienThoai: "0961011003",
-            trangThaiTVTT: "Tốt",
+            trangThaiTVTT: "true",
             danhSachSanPham: {
                 sP1: {
                     maSP: "H2O",
@@ -42,8 +43,8 @@
                 }
             }
         }
-        let danhSachSanPham = thongTinKhachHang.danhSachSanPham;
-        document.writeln("thongTinKhachHang" + "<br>" + thongTinKhachHang.hoTen + "<br>" + thongTinKhachHang.soDienThoai + "<br>" + thongTinKhachHang.trangThaiTVTT + "<br>"),
+        let danhSachSanPham = thongTinKhachHang.danhSachSanPham; // Có thể dùng trùng dữ liệu "let"
+        document.writeln("Thông tin khách hàng" + "<br>" + thongTinKhachHang.hoTen + "<br>" + thongTinKhachHang.soDienThoai + "<br>" + thongTinKhachHang.trangThaiTVTT + "<br>"),
             tongSP1 = danhSachSanPham.sP1.soLuong * danhSachSanPham.sP1.giaSP;
         tongSP2 = danhSachSanPham.sP2.soLuong * danhSachSanPham.sP2.giaSP;
         tongSP3 = danhSachSanPham.sP3.soLuong * danhSachSanPham.sP3.giaSP;

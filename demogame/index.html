@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game - Trò Chơi Rắn Săn Mồi</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="game-container">
+        <h1>🐍 SNAKE GAME 🐍</h1>
+
+        <div class="game-info">
+            <div class="score-board">
+                Điểm: <span id="score">0</span>
+            </div>
+            <div class="score-board">
+                Kỷ lục: <span id="highScore">0</span>
+            </div>
+        </div>
+
+        <canvas id="gameCanvas" width="400" height="400"></canvas>
+
+        <div class="controls">
+            <button class="control-btn" onclick="startGame()">Bắt đầu</button>
+            <button class="control-btn pause-btn" onclick="togglePause()">Tạm dừng</button>
+            <button class="control-btn reset-btn" onclick="resetGame()">Chơi lại</button>
+        </div>
+
+        <div class="direction-buttons">
+            <button class="control-btn" onclick="changeDirection('up')">↑</button>
+            <button class="control-btn" onclick="changeDirection('left')">←</button>
+            <button class="control-btn" onclick="changeDirection('right')">→</button>
+            <button class="control-btn" onclick="changeDirection('down')">↓</button>
+        </div>
+
+        <div class="instructions">
+            <strong>Cách chơi:</strong><br>
+            • Sử dụng phím mũi tên hoặc nút điều hướng để di chuyển<br>
+            • Ăn thức ăn (màu đỏ) để tăng điểm và độ dài<br>
+            • Tránh va vào tường và thân mình<br>
+            • Phím Space: Tạm dừng/Tiếp tục
+        </div>
+    </div>
+
+    <div class="game-over" id="gameOver">
+        <h2>GAME OVER!</h2>
+        <p>Điểm số: <span id="finalScore">0</span></p>
+        <p id="newRecord" style="color: #ffd93d; display: none;">🏆 Kỷ lục mới!</p>
+        <button class="control-btn" onclick="resetGame()">Chơi lại</button>
+    </div>
+
+    <script src="script.js">
+
+    </script>
+</body>
+
+</html>
