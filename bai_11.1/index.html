@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //a,b,c
+        //tổng = điểm a*0.6 + điểm b*0.3 + diểm c*0.1
+        //tổng nằm trong khoảng 8 đến 10: điểm Abortcontroller
+        //7-8: B
+        //5-7: C
+        //4-5: D
+        //nhỏ hơn 4: F
+        let a = parseFloat(prompt("Nhập điểm A (0-10):"));
+        let b = parseFloat(prompt("Nhập điểm B (0-10):"));
+        let c = parseFloat(prompt("Nhập điểm C (0-10):"));
+
+        if ((a < 0 || a > 10) || (b < 0 || b > 10) || (c < 0 || c > 10)) {
+            document.writeln("Điểm nhập không hợp lệ! Vui lòng nhập lại (0-10).");
+        } else {
+            let tongDiem = a * 0.6 + b * 0.3 + c * 0.1;
+
+            if (tongDiem < 4) {
+                document.writeln("F");
+            } else if (tongDiem >= 4 && tongDiem < 5) {
+                document.writeln("D");
+            } else if (tongDiem < 7) {
+                document.writeln("C");
+            } else if (tongDiem < 8) {
+                document.writeln("B");
+            } else {
+                document.writeln("A");
+            }
+        }
+    </script>
+</body>
+
+</html>
