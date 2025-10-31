@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <h1>Vi du thay doi che do</h1>
+            <img width="300px" src="../bai_14/pic/tải xuống.png" alt="Hinh anh">
+        </div>
+        <div>
+            <h1>Che do sang</h1>
+        </div>
+        <div>
+            <button onclick="doiCheDo()">Thay doi che do</button>
+        </div>
+    </div>
+    <script>
+        // Nếu hế độ đang là sáng -> cheDo = false
+        let cheDo = true
+        function doiCheDo() {
+            // Nếu hế độ đang là sáng -> cheDo = false
+            if (cheDo == true) {
+                document.getElementsByTagName('body')[0].style.backgroundColor = 'black';
+                document.getElementsByTagName('h1')[0].style.color = 'yellow';
+                document.getElementsByTagName('h1')[1].style.color = 'white';
+                document.getElementsByTagName('h1')[1].inerterHTML = 'Che do toi';
+                document.getElementsByTagName('img')[0].src = '../bai_14/pic/tải xuống (1).png';
+                cheDo = false;
+            } else {
+                document.getElementsByTagName('body')[0].style.backgroundColor = 'white';
+                document.getElementsByTagName('h1')[0].style.color = 'black';
+                document.getElementsByTagName('h1')[1].style.color = 'black';
+                document.getElementsByTagName('h1')[1].innerHTML = 'Che do sang';
+                document.getElementsByTagName('img')[0].src = '../bai_14/pic/tải xuống.png';
+                cheDo = true;
+            }
+        }
+    </script>
+</body>
+
+</html>
