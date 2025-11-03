@@ -1,0 +1,78 @@
+html
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>2048 — Vanilla JS</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="wrap">
+        <header>
+            <div class="title">
+                <h1>2048</h1>
+                <div class="badge">Vanilla JS</div>
+            </div>
+            <div class="stats">
+                <div class="pill"><small>Điểm</small>
+                    <div class="val" id="score">0</div>
+                </div>
+                <div class="pill"><small>Kỷ lục</small>
+                    <div class="val" id="best">0</div>
+                </div>
+            </div>
+        </header>
+
+
+        <div class="actions">
+            <button id="newGame">Chơi mới</button>
+            <button id="undo" class="secondary" title="Hoàn tác (Z)">Hoàn tác</button>
+        </div>
+
+
+        <div class="board" id="board" tabindex="0">
+            <div class="grid">
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+            </div>
+            <div class="tiles" id="tiles"></div>
+        </div>
+
+
+        <p class="note">Dùng phím mũi tên / WASD hoặc vuốt để chơi. Mục tiêu: tạo ô <strong>2048</strong>.</p>
+    </div>
+
+
+    <div class="modal" id="modal">
+        <div class="modal-card">
+            <h2 id="modalTitle">Bạn đã thắng!</h2>
+            <p id="modalMsg">Tuyệt vời! Bạn có muốn tiếp tục chơi để đạt điểm cao hơn?</p>
+            <div style="display:flex; gap:8px; justify-content:center; margin-top:12px">
+                <button id="continueBtn">Tiếp tục</button>
+                <button id="restartBtn" class="secondary">Chơi lại</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="game.js"></script>
+</body>
+
+</html>

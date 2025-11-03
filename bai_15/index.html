@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FPT Play</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <img src="../bai_15/pic/pic/fb1.png" alt="FPT Play">
+                </div>
+                <div class="">
+                    <ul class="menu">
+                        <li><a href="#">Trang chủ</a></li>
+                        <li><a href="#">Truyền hình</a></li>
+                        <li><a href="#">Phim bộ</a></li>
+                        <li><a href="#">V.League</a></li>
+                        <li><a href="#">Thiếu nhi</a></li>
+                        <li><a href="#">Xem thêm</a></li>
+                    </ul>
+                </div>
+
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="banner-qc">
+            <div class="banner">
+                <img src="../bai_15/pic/pic/fpt1.png" alt="">
+            </div>
+            <div class="banner">
+                <img src="../bai_15/pic/pic/fpt3.png" alt="">
+            </div>
+            <div class="banner">
+                <img src="../bai_15/pic/pic/fpt2.png" alt="">
+            </div>
+        </div>
+        <div class="uachuong">
+            <div class="phimhot">
+                <h2>Cày phim hay mỗi ngày</h2>
+                <a href="">Xem thêm</a>
+            </div>
+            <div class="movies">
+                <div class="movie-card">
+                    <img src="../bai_15/pic/pic/1.png" alt="Kế Hoạch Báo Thù Của Analia">
+                    <p>Kế Hoạch Báo Thù Của Analia</p>
+                </div>
+                <div class="movie-card">
+                    <img src="../bai_15/pic/pic/2.png" alt="Nữ Vệ Sĩ">
+                    <p>Nữ Vệ Sĩ</p>
+                </div>
+                <div class="movie-card">
+                    <img src="../bai_15/pic/pic/3.png" alt="Một Tớ Hai Chủ">
+                    <p>Một Tớ Hai Chủ</p>
+                </div>
+                <div class="movie-card">
+                    <img src="../bai_15/pic/pic/4.png" alt="Người 3 Mặt">
+                    <p>Hồ Sơ Lửa (Phần 2): Người 3 Mặt</p>
+                </div>
+                <div class="movie-card">
+                    <img src="../bai_15/pic/pic/5.png" alt="Hoa Thiên Cốt">
+                    <p>Hoa Thiên Cốt</p>
+                </div>
+            </div>
+            <script>
+                let danhSachPhim = [
+                    {
+                        id: 1,
+                        tenPhim: "Mưa Đỏ",
+                        namPhatHanh: 2025,
+                        tuoi: 16,
+                        thoiLuong: 2,
+                        quocGia: "Việt Nam",
+                        poster: "../bài8/pic/1.png",
+                        theLoai: "Phim chiếu rạp"
+                    },
+                    {
+                        id: 2,
+                        tenPhim: "Conan",
+                        namPhatHanh: 2023,
+                        tuoi: 10,
+                        thoiLuong: 1.5,
+                        quocGia: "Nhật Bản",
+                        poster: "../bài8/pic/2.png",
+                        theLoai: "Phim hoạt hình"
+                    }
+                ];
+
+                const movieCards = document.querySelectorAll(".movie-card");
+
+                movieCards.forEach((card, index) => {
+                    card.addEventListener("click", () => {
+                        let phim = danhSachPhim[index];
+                        if (phim) {
+                            // Lưu thông tin phim vào localStorage để truyền sang trang khác
+                            localStorage.setItem("phimDuocChon", JSON.stringify(phim));
+
+                            // Mở trang chi tiết
+                            window.location.href = "thongTin.html";
+                        }
+                    });
+                });
+            </script>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>

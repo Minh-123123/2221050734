@@ -1,0 +1,139 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: black;
+    color: #fff;
+}
+
+/* Header */
+header {
+    background-color: black;
+    height: 10vh;
+    width: 100%;
+}
+
+.container {
+    width: 70%;
+    margin: auto;
+
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.logo img {
+    height: 40px;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu li a:hover {
+    color: orange;
+}
+
+main {
+    width: 70%;
+    margin: auto;
+    background-color: black;
+    height: 1000px;
+}
+
+.banner-qc .banner {
+    border: 10px solid black;
+}
+
+.banner img {
+    width: 100%;
+    display: block;
+
+}
+
+
+
+/* Tiêu đề danh mục */
+.uachuong {
+    margin-bottom: 40px;
+    /* cách danh mục này với danh mục dưới 40px */
+}
+
+.phimhot {
+    display: flex;
+    /* dùng flexbox để xếp h2 và link "xem thêm" cùng hàng */
+    justify-content: space-between;
+    /* h2 sang trái, link sang phải */
+    align-items: center;
+    /* căn giữa theo chiều dọc */
+    margin-bottom: 15px;
+    /* cách phần tiêu đề với danh sách phim bên dưới */
+}
+
+.phimhot h2 {
+    font-size: 20px;
+    /* chữ tiêu đề lớn hơn bình thường */
+}
+
+.phimhot a {
+    color: orange;
+    /* chữ "Xem thêm" màu cam */
+    text-decoration: none;
+    /* bỏ gạch chân mặc định của link */
+    font-size: 14px;
+    /* chữ nhỏ gọn hơn */
+}
+
+/* Danh sách phim */
+.movies {
+    display: flex;
+    /* sắp xếp các thẻ phim nằm ngang */
+    gap: 15px;
+    /* khoảng cách giữa các poster phim */
+    flex-wrap: nowrap;
+    /* không cho xuống hàng, tất cả phim nằm trên 1 hàng */
+    overflow-x: auto;
+    /* nếu nhiều phim thì xuất hiện cuộn ngang */
+}
+
+.movie-card {
+    flex: auto;
+    /* giữ kích thước cố định, không co giãn */
+    width: 180px;
+    /* chiều rộng mỗi poster phim */
+    background: black;
+    /* nền xám đậm */
+    border-radius: 8px;
+    /* bo góc 8px */
+    overflow: hidden;
+    /* nếu ảnh thừa thì cắt bớt */
+    text-align: center;
+    /* căn chữ tên phim vào giữa */
+}
+
+.movie-card img {
+    width: 100%;
+    /* ảnh luôn vừa khít chiều rộng khung */
+    display: block;
+    /* loại bỏ khoảng trắng dưới ảnh */
+    border-bottom: 1px solid black;
+    /* đường kẻ ngăn cách ảnh với tên phim */
+}
+
+.movie-card p {
+    padding: 8px;
+    /* khoảng trống quanh chữ tên phim */
+    font-size: 14px;
+    /* cỡ chữ vừa phải */
+}

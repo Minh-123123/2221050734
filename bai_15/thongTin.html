@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi tiết phim</title>
+
+</head>
+
+<body>
+    <div class="container">
+        <h2 id="tenPhim"></h2>
+        <img id="poster" src="" alt="">
+        <p><b>Năm phát hành:</b> <span id="namPhatHanh"></span></p>
+        <p><b>Độ tuổi:</b> <span id="tuoi"></span>+</p>
+        <p><b>Thời lượng:</b> <span id="thoiLuong"></span> giờ</p>
+        <p><b>Quốc gia:</b> <span id="quocGia"></span></p>
+        <p><b>Thể loại:</b> <span id="theLoai"></span></p>
+        <button><a href="FPT.html"> Quay lại</a></button>
+    </div>
+
+    <script>
+        // Lấy thông tin phim từ localStorage
+        const phim = JSON.parse(localStorage.getItem("phimDuocChon"));
+
+        if (phim) {
+            document.getElementById("tenPhim").innerText = phim.tenPhim;
+            document.getElementById("poster").src = phim.poster;
+            document.getElementById("namPhatHanh").innerText = phim.namPhatHanh;
+            document.getElementById("tuoi").innerText = phim.tuoi;
+            document.getElementById("thoiLuong").innerText = phim.thoiLuong;
+            document.getElementById("quocGia").innerText = phim.quocGia;
+            document.getElementById("theLoai").innerText = phim.theLoai;
+        } else {
+            document.body.innerHTML = "<h2>Không tìm thấy thông tin phim!</h2>";
+        }
+    </script>
+</body>
+
+</html>
